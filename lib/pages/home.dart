@@ -1,7 +1,6 @@
-import 'package:chokin/data.dart';
+import 'package:chokin/basicdata.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:provider/provider.dart';
 
 class HomePage extends ConsumerWidget {
 
