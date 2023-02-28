@@ -7,8 +7,9 @@ import 'pages/home.dart';
 import 'pages/summary.dart';
 import 'pages/calender.dart';
 import 'pages/setting.dart';
+import 'pages/addsavingdata.dart';
 
-import 'data.dart';
+import 'basicdata.dart';
 import 'pagetype.dart';
 
 void main() {
@@ -55,7 +56,8 @@ class MyMainWidget extends ConsumerWidget {
             BottomNavigationBarItem(icon: Icon(Icons.settings), label: '設定')
           ],
           type: BottomNavigationBarType.fixed,
-        )
+        ),
+       floatingActionButton: AddSavingDataPage()
     );
   }
 }

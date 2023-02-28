@@ -35,6 +35,17 @@ class SettingPage extends ConsumerWidget {
   }
 }
 
+Future<int?> showGoalDiaglog(
+  BuildContext context
+) async {
+  return showDialog(
+    context: context,
+    builder: (context){
+      return _GoalDialog();
+    }
+  );
+}
+
 class _GoalDialog extends StatefulWidget{
   @override
   State createState() => _GoalDialogState();
@@ -84,13 +95,4 @@ class _GoalDialogState extends State<_GoalDialog>{
   }
 }
 
-Future<int?> showGoalDiaglog(
-  BuildContext context
-) async {
-  return showDialog(
-    context: context,
-    builder: (context){
-      return _GoalDialog();
-    }
-  );
-}
+
