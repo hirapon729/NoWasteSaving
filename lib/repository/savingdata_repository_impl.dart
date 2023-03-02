@@ -5,11 +5,11 @@ import '../models/savingdata.dart';
 import '../models/result.dart';
 import 'repository.dart';
 
-final todoRepositoryProvider =
-    Provider<Repository<SavingData>>((ref) => TodoRepositoryImpl());
+final SavingDataRepositoryProvider =
+    Provider<Repository<SavingData>>((ref) => SavingDataRepositoryImpl());
 
-class TodoRepositoryImpl implements Repository<SavingData> {
-  TodoRepositoryImpl();
+class SavingDataRepositoryImpl implements Repository<SavingData> {
+  SavingDataRepositoryImpl();
 
   /// [where]は id = ? のような形式にする
   @override

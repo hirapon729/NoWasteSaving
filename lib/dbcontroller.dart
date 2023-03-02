@@ -35,7 +35,7 @@ class DbController {
     batch.execute('DROP TABLE IF EXISTS $dbName');
     batch.execute(
       "CREATE TABLE $SavingDataTableName("
-      "id TEXT PRIMARY KEY,"
+      "id TEXT PRIMARY KEY AUTOINCREMENT,"
       "money INTEGER NOT NULL,"
       "text TEXT NOT NULL,"
       "date INTEGER NOT NULL,"
